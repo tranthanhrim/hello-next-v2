@@ -60,6 +60,24 @@ export default class extends Document {
         <Head>
           { this.helmetJsx }
           { this.helmetHeadComponents }
+          {/* Facebook Open Graph */}
+          <meta property='og:url' content='https://food.grab.com' />
+          <meta property='og:type' content='website' />
+          <meta property='og:title' content='GrabFood Merchant Directory' />
+          <meta property='og:description' content='Your favourite food delivered hot and fresh! Find restaurant menus, cuisines and dishes available in GrabFood across South East Asia.' />
+          <meta property='og:image' content='https://food.grab.com/static/images/social-hero-ID.jpg' />
+          <meta property='og:image:width' content='1200' />
+          <meta property='og:image:height' content='630' />
+          <meta property='og:locale' content='id_ID' />
+          <meta property='og:site_name' content='Grabfood Merchant Directory' />
+
+          {/* Twitter Card */}
+          <meta property='twitter:image' content='https://food.grab.com/static/images/social-hero-ID.jpg' />
+          <meta property='twitter:title' content='GrabFood Merchant Directory' />
+          <meta property='twitter:app:id:iphone' content='647268330' />
+          <meta property='twitter:app:id:googleplay' content='com.grabtaxi.passenger' />
+          <meta property='twitter:site' content='@GrabSG' />
+          <meta property='twitter:description' content='Your favourite food delivered hot and fresh! Find restaurant menus, cuisines and dishes available in GrabFood across South East Asia.' />
         </Head>
         <body {...this.helmetBodyAttrComponents}>
           <Main />
